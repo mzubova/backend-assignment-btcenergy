@@ -15,8 +15,11 @@ provider:
 plugins:
   - serverless-esbuild
   - serverless-offline
+  - serverless-offline-redis-server
 
 custom:
+  redis:
+    port: 8888
   esbuild:
     packager: yarn
     minify: false
